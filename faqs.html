@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <input type="checkbox" name="" id="toggler">
+            <label for="toggler" class="fas fa-bars"></label>
+            <a href="index.html" class="logo"> Prickles & Co </a>
+            <nav class="navbar">
+                <a href="index.html#home">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#faqs">FAQs</a>
+                <a href="index.html#contact">Contact us</a>
+                <a href="index.html#freedelivery">Today only- Free delivery <i class="fa-solid fa-bag-shopping"></i></a>
+            </nav>
+        </header>
+
+        <section class="FAQ" id="FAQ">
+            <div class="questions-container">
+                <h4 class="title">FAQs</h4>
+                <div class="faq ">
+                    <button class="accordion">
+                       How do i add a new question?
+                       <i class="fa-solid fa-arrow-down" style="color:white" ></i>
+                    </button>
+                    <div class="pannel">
+                        <p>To add a new question go to app settings and press "Manage Questions" button.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <button class="accordion">
+                        Can I insert pictures in my FAQ?
+                        <i class="fa-solid fa-arrow-down-long"></i>
+                    </button>
+                    <div class="pannel">
+                        <p>Yes! To add a picture follow these simple steps:
+                            Enter App Settings
+                            Click the "Manage Questions" button
+                            Click on the question you would like to attach a picture to
+                            When editing your answer, click on the picture icon and then add an image from your library.</p>
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <button class="accordion">
+                        Can I insert video in my FAQ?
+                        <i class="fa fa-arrow-down" ></i>
+                    </button>
+                    <div class="pannel">
+                        <p>Yes! Users can add video from YouTube or Vimeo with ease:
+                            Enter App Settings
+                            Click the "Manage Questions" button
+                            Click on the question you would like to attach a video to
+                            When editing your answer, click on the video icon and then paste the YouTube or Vimeo video URL
+                            That's it! A thumbnail of your video will appear in answer text box.</p>
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <button class="accordion">
+                        How do I edit or remove the "FAQ title"?
+                        <i class="fa-solid fa-arrow-down-long"></i>
+                    </button>
+                    <div class="pannel">
+                        <p>The FAQ title can be adjusted in the settings tab of the App Settings. You can also remove the title by unchecking its checkbox in the settings tab.</p>
+                    </div>
+                </div>
+            </div>
+            <script>
+                var acc=document.getElementsByClassName ("accordion");
+                var i;
+
+                for(i=0;i<acc.length;i++){
+                    acc[i].addEventListener("click",function(){
+                        this.classList.toggle("active");
+                        this.parentElement.classList.toggle("active");
+
+                    var pannel = this.nextElementSibling;
+
+                    var pannel = this.nextElementSibling;
+
+                    if(pannel.style.display === "block"){
+                        pannel.style.display = "none";
+                    } else{
+                        pannel.style.display = "block";
+                    }
+                });
+                }
+            </script>
+        </section>
+
+        <!--footer section-->
+        <section id="footer" class="footer-container">
+            <div class="footer-section our-store">
+                <h2>OUR STORE</h2>
+                <p>Address: 400 Terry Francois Street San Francisco, CA 94158</p>
+                <p>Phone: 123-456-7890</p>
+                <p>Email: info@my-domain.com</p>
+            </div>
+            <div class="footer-section opening-hours">
+                <h2>OPENING HOURS</h2>
+                <p>Mon - Fri: 7am - 10pm</p>
+                <p>Saturday: 8am - 10pm</p>
+                <p>Sunday: 8am - 11pm</p>
+            </div>
+            <div class="footer-section help">
+                <h2>HELP</h2>
+                <ul>
+                    <li><a href="#">Shipping Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section subscribe">
+                <h2>SUBSCRIBE</h2>
+                <form action="#" method="post" class="subscribe-form">
+                    <div class="input-group">
+                    <input type="email" name="email" placeholder="Email Address">
+                    <button type="submit">Subscribe now</button>
+                </div>
+                </form>
+                <div class="social-icons">
+                    <a href="#" class="fa-brands fa-facebook"></a>
+                    <a href="#" class="fa-brands fa-google-plus-g"></a>
+                    <a href="#" class="fa-brands fa-pinterest"></a>
+                    <a href="#" class="fa-brands fa-instagram"></a>
+            </div>
+        </div>
+</section>
+    <!--footer section ends-->
+
+    <!--map section starts-->
+
+    <div class="containerr">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.2701831375393!2d19.8094994758753!3d41.32473787130787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135031b3243ce78f%3A0xc8b7d9673158aff0!2sMyslym%20shyri!5e0!3m2!1sen!2s!4v1711652253759!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!--map section ends-->
+
+    </body>
+</html>
