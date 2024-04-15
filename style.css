@@ -108,7 +108,7 @@ header .navbar a:hover{
 
 /*home section style*/
 .home{
-    background: url(photo1.png);
+    background: url(image/photo1.png);
     background-size: cover;
     background-position: center;
 }
@@ -401,7 +401,7 @@ header .navbar a:hover{
 
 /* Contact Section Styles */
 .contact-container{
-    background: url(phot3.png);
+    background: url(image/phot3.png);
     background-size:cover;
     background-position: center;
     padding: 1rem 4%;
@@ -487,7 +487,7 @@ button[type="submit"]:hover{
     padding: 3%;
 }
 .questions-container{
-    background: url(faqs.png);
+    background: url(image/faqs.png);
     background-size: cover;
     background-position: center;
     padding: 0;
@@ -612,25 +612,25 @@ button[type="submit"]:hover{
     max-width: 600px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.about-us h8{
+.about-us h1{
     font-size: 20px;
 }
 .about-us p{
     font-size: 12px;
 }
-.our-mission h8{
+.our-mission h1{
     font-size: 20px;
 }
 .our-mission p{
     font-size: 12px;
 }
-.team h8{
+.team h1{
     font-size: 20px;
 }
-.reviews h8{
+.reviews h1{
     font-size: 20px;
 }
-.team h9{
+.team h2{
     font-size: 18px;
     position: center;
 }
